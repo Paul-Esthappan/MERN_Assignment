@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        l=5
+        
+        string=""
+        
+       for (let i = 1; i <= l; i++) 
+       {
+            for (let j = 0; j < l-i; j++) 
+            {
+                string +=" ";
+            }
+            for (let k = 0; k < i; k++) 
+            {
+                string += "*"
+                
+            }
+            string += "\n"
+       }
+       console.log(string)
+      
+    </script>
+</body>
+</html>

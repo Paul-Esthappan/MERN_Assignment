@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        l=5
+        n=l
+        pattern=""
+        for (let i = 0; i < l; i++) 
+        {
+            for (let j = 0; j < i; j++) 
+            {
+                pattern=pattern+" "
+                
+            }
+            for (let k = 0; k < n-1; k++) 
+            {
+                pattern=pattern+"*"
+                
+            }
+            for (let k = 0; k < n; k++) 
+            {
+                pattern=pattern+"*"
+                
+            }
+            for (let m = 0; m < i; m++) 
+            {
+                pattern=pattern+" "
+                
+            }
+            pattern=pattern+"\n"
+            n=n-1
+        }
+        console.log(pattern)
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+  
+  /* Basic Styling for Links and List Items */
+  .navi a, .navi li {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Navigation Bar Styling */
+.navi {
+
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+/* Logo Styling */
+.logo {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}
+.logoname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+/* Hamburger Menu Styling */
+.ham {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.showmenu, .hidemenu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  z-index: 1;
+}
+.showmenu li, .hidemenu li{
+  padding: 1px 20px;
+}
+
+
+/* Sub-Menu Styling */
+.dropdown {
+  list-style: none;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.3);
+  margin-top: 150px;
+  margin-left: 208px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.dropdown li{
+
+color: blue;
+
+}
+.dropup{
+  display: none;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+
+  .ham{
+      display: block;
+  }
+
+  .hidemenu{
+      display: none;
+  }
+  
+  .showmenu{
+      display: flex;
+      position: absolute;
+      height: 100dvi;
+      width: 100dvi;
+      margin-top: 73dvi;
+      font-size: 2rem;
+      flex-direction: column;
+      height: max-content;
+      background-color: black;
+  }
+  .showmenu li{
+      padding: 10px;
+  }
+  .dropdown{
+      display: flex;
+      width: 100%;
+      margin-top: 100dvi;
+      margin-left: 5px;
+      font-size: 2rem;
+      flex-direction: column;
+      height:max-content;
+      width: 100dvi;
+      background-color: black;
+  }
+  .dropup{
+      display: none; 
+  }
+  .logoname{
+      padding-left: 10px;
+  }
+}
+

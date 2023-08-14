@@ -1,0 +1,39 @@
+
+.carousel-container {
+    max-width: 100dvi;
+    margin: 0 auto;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item {
+    height:auto;
+    width: 100dvi; 
+    
+  }
+  
+  .carousel-item img {
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .showover{
+    display: flex;
+    stroke: black;
+    stroke-width: 2px;
+    background-color: gray;
+  }
+  .hideover{
+    display: none;
+  }
+
+  .showvideo{
+    display: block;
+  }
+
+  .hidevideo{
+    display: none;
+  }

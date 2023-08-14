@@ -1,0 +1,46 @@
+.cardcontainer {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: scroll; 
+    
+    
+  }
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  
+  .carrd {
+    flex: 0 0 18rem; /* Set the fixed width for each card */
+    margin-right: 1rem; /* Add some spacing between cards */
+    background-color: black;
+    color: white;
+    max-height: max-content;
+
+  }
+  
+
+  .closevideo{
+    display: none;
+  }
+
+  .showvideo{
+    display: block;
+  }
+
+  .closebutton{
+    margin-left: 94.5%;
+    padding: 0rem 1rem ;
+    position: absolute;
+    background-color: gray;
+    border-radius: 3px;
+    
+  }
+  .hideclodebutton{
+    display: none;
+  }
